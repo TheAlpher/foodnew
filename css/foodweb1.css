@@ -1,0 +1,629 @@
+html{
+    scroll-behavior: smooth;
+  margin:0;
+  font-family:"Lato";
+  
+  }
+  *
+  {
+    margin:0;
+    padding:0;
+  }
+  .logo
+  {   border-radius:50px;
+      margin-left:50px;
+      margin-top: 50px;
+      float:left;
+  }
+    /* .bg-image {
+
+      background-image: url("../img/foodback.jpg");
+     
+      
+      width:100%;
+      height: 100%;
+      filter: blur(5px);
+      position:absolute;
+      z-index: 0;
+   
+      background-size:100%;
+      background-repeat: no-repeat;
+  
+      
+    background-attachment: fixed;
+    } */
+    
+  
+    #bg-text {
+      
+      background-image:linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.5)),url("../img/foodback.jpg"); /* Black w/opacity/see-through */
+      background-size:cover;
+      margin:0;
+      
+     
+     
+      
+   
+      width: 100%;
+      height:100vh;
+      
+    
+    }
+    .init{
+      display: flex;
+      justify-content: flex-end;
+      float:top;
+      
+     
+    }  
+    
+    
+    li{
+      list-style: none;
+      
+    
+      
+      
+      
+     
+    
+     padding-right:15px;
+     padding-left: 15px;
+     padding-top:3px;
+     padding-bottom: 3px;
+  border-width:0px;
+  transition: 0s;
+    }
+    .init-opts
+    { margin-top:2.5rem;
+      margin-right:2rem;
+  
+    }
+   
+    a{ 
+      text-decoration: none;
+      font-size: 1.7rem;
+      color:white;
+      
+    
+    }
+    
+    .initial:hover{
+      display: inline-block;
+      text-decoration: underline rgba(46, 204, 113,1);
+    }
+    .title{
+      margin-top:80px;
+      display: flex;
+      font-family:'Segoe UI' ;
+      color:white; 
+      font-size:3rem;
+      margin-left:7rem;
+      word-spacing: 2rem;
+     
+    
+    }
+    .button {
+    
+     
+      padding: 16px 32px;
+      
+      text-align: center;
+      text-decoration: none;
+      border-radius:30px;
+      display: flex;
+      font-size: 20px;
+    transition-duration: 0.4s;
+    
+    }
+    .scrolls{
+      margin-top: 0px;
+       display: flex;
+       justify-content: left;
+      
+       
+     }
+     .list{
+       margin-top:20px;
+     } 
+    
+    .hungry
+    {
+      color:white;
+      background-color:#2ecc71;
+     
+      border-width:0px;
+      border-color:green;
+      border-style: solid;
+      margin-left:90px;
+    }
+  .hungry:hover
+  {
+    background-color:#10a54e; 
+    margin-right: 20px; 
+    color:white ;
+    transform: scale(1.2) ;
+  }
+    
+  .showmore
+  {
+    background-color:rgba(255,255,255,0);
+    border-width:2px;
+    
+    border-color:#2ecc71;
+    border-style: solid;
+     
+    color:#2ecc71;
+    transition-duration:0.4s;
+    
+  }
+  .showmore:hover
+  {
+  background-color:rgba(46, 204, 113,1);
+  
+  
+  color:white ;
+  transform: scale(1.1) ;
+  }
+  .getfoodfast
+  { 
+
+   padding-top:50px;
+    margin-bottom:30px;
+    font-size:2.5rem;
+  
+  }  
+  hr
+      {
+        width:150px;
+        height:2px;
+        margin-left:700px;
+       
+        background-color: rgb(46, 204, 113);
+        border-radius: 20px;
+      }
+    
+    h1{
+      text-align:center;
+      font-size:4rem;
+      font-family: "Lato";
+      color:black;
+     margin-top:100px;
+     font-weight: 200;
+    }
+   
+    #contents{
+    
+  
+    margin-top:5vh;   
+     
+      display: flex;
+      
+      }
+      #article-section1
+      { 
+        text-align: center;
+        margin-left:5px;
+        margin-right:5px;
+        color:green; 
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right:30px;
+        border-radius: 20px;
+        position: relative;
+      
+        
+      }
+      .vl
+      {
+        border-style:solid;
+        border-right-width: 30px;
+         margin-top: 440px;
+        height: 320px;
+        border-color: lightgreen;
+        border-radius: 20px;
+      }
+      #article-section2
+      {
+        text-align: center;
+        margin-left:5px;
+        margin-right:5px;
+       color:green;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right:30px;
+        border-radius: 20px; position: relative;
+      
+        
+      }
+      #article-section3
+      { 
+        text-align: center;
+        margin-left:5px;
+        margin-right:5px;
+        color:green;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right:30px;
+        border-radius: 20px; 
+        position: relative;
+      }
+      #article-section4
+      { 
+        text-align: center;
+        margin-left:5px;
+        margin-right:5px;
+        color:green;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right:30px;
+        border-radius: 20px; 
+        position: relative;
+      }
+      .desc
+      {
+        font-size:1.4rem;
+        padding-bottom:10vh;
+        color:black;
+        font-weight:lighter;
+        
+      }
+      .sectitle
+      {
+        margin-top:4vh;
+      
+        color:black;
+        font-weight: 0.5rem;
+      }
+      
+      .intro{
+        margin-top:2rem;
+      }
+      .intro1
+      {
+        text-align:center;
+        font-size:1.5rem;
+        margin-left:40vh;
+        margin-right:40vh;
+      }
+      #process{
+        background-color: rgb(240, 240, 240);
+        padding-bottom:50px;
+      }
+    
+   section{
+       margin-left:100px;
+       margin-right:100px;
+       margin-top:20px;
+       margin-bottom:50px;
+   }
+      .howitworks
+      { 
+        display:flex;
+        height:auto;
+   
+      }
+  
+  .pic
+  {
+    height:470px; 
+    width:250px;
+    margin-left:200px;
+    margin-right:100px;
+
+  
+  }
+  .howto{
+    height:500px;
+    width: 600px;
+  }
+  .parts{
+    display:flex;
+    width:550px;
+     margin:50px;
+  height:70px;
+    }
+  .numbering
+  { text-align:center;
+    border-style:solid;
+    border-radius:200px;
+    margin-right:30px;
+    font-size: 3rem;
+    border-color:#2ecc71;
+    height:60px;
+    width:60px;
+    font-weight: lighter;
+    color:#2ecc71;
+  }
+  .steps
+  {font-size:1.4rem;
+  width:400px;
+  height:60px;
+  
+  }
+  .storelinks
+  { padding-top:20px;
+    margin-right:30px;
+    width:150px;
+    height:50px;
+  }
+  #citycontents
+  {
+      display:flex;
+     
+  
+    
+  }
+  .citycont{
+   
+    margin:2%;
+    height: auto;
+  }
+  .citypics{
+  width:100%;
+  height:180px;
+  }
+  
+  .citytitle
+  {
+    margin-top:15px;
+    padding-bottom:10px;
+    font-size:1.4rem;
+    font-weight: lighter;
+  }
+  .citydesccont
+  { font-size:1.1rem;
+    font-weight:lighter;
+   margin-left:10px;
+   margin-top:-3px;
+
+    color:black;
+  }
+  .tweetlink
+  {
+    
+  
+    color:#2ecc71;
+    font-size:1rem;
+   
+  
+  }
+  .citydesc{
+    margin-top:8px;
+    display:flex;
+    color:#2ecc71;
+  }
+  .citydesctweet 
+  { margin-left:20px;
+    width:150px;
+    transition-duration: 0.3s;
+  
+  }
+  .citydesctweet:hover
+  {
+   
+    transform:scale(1.2);
+  }
+  
+  #customers
+  { max-width:auto;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,1)) , url("../img/customerback2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom:100px;
+  height:100%;
+  width:100%;
+  padding-bottom:50px;
+  
+  }
+  .customerrev
+  {
+    display: flex;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:30px;
+  }
+  .eachcustomer
+  { color:white;
+    font-style:italic;
+    width:400px;
+    margin-left:30px;
+    margin-right: 30px;
+  }
+  .quotation
+  {
+    font-size:3rem;
+  }
+  .review
+  { 
+    font-size:1.3rem;
+  }
+  .customerdetails
+  { margin-top:50px;
+    display:flex;
+  }
+  .customerpic{
+  border-radius:50px;
+  width:50px;
+  height:50px;
+  }
+  .customername
+  {
+    padding-top:25px;
+    margin-left:20px;
+  }
+  #paymentplans
+  {
+      background-color:rgb(240, 240, 240);
+  }
+  .plans
+  {  
+      display:flex;
+      margin-left:50px;
+      margin-right:50px;
+  }
+  .eachplan
+  {
+      margin:50px;
+      width:300px;
+      border-radius:20px;
+      padding:30px;
+      background-color: white;
+  }
+  .payamount
+  {
+      display:flex;
+      color:#2ecc71;  
+    }
+  .eachplan h3{
+      font-size:1.5rem;
+      font-weight:lighter;
+  }
+  .payamount h2{
+      font-size:2.6rem;
+  }
+  .payamount p{
+      font-size:1.2rem;
+  }
+  .payfeatures
+  {color:#2ecc71;
+      display:flex;
+      padding:5px;
+  }
+  .payfeaturespoints
+  {
+color:black;
+padding-left:10px;
+  }
+  .mealamount
+  {
+      font-size:0.8rem;
+      margin-bottom:30px;
+  }
+  .payfeatures
+  {
+      margin-top:10px;
+      margin-bottom:10px;
+  }
+  .signupnow
+  {
+      padding-top:20px;
+      margin-left:30px;
+    
+  }
+ 
+  .entry
+  {
+    
+    margin-left:200px;
+    margin-right:200px;
+  
+  }
+  .entry-text
+
+  { text-align: center;
+    float:left;
+   width:300px;
+  margin-left:0;
+  }
+
+ input[type=text],input[type=email],select,textarea{
+   border:2px solid grey;
+   border-radius: 4%;
+   width:400px;
+   padding:3%;
+   margin-bottom:50px;
+ }
+ .textarea
+ {
+   height:7rem;
+
+ }
+ input[type=checkbox]
+ { margin-top:3px;
+  margin-right:10px;
+   margin-bottom: 5%;
+   
+ }
+ .form-submit
+ {
+  width:auto;
+    background-color:rgba(255,255,255,0);
+    border:2px solid #2ecc71;
+    padding: 16px 32px;
+      font-size:1.2rem;
+    text-decoration: none;
+    border-radius:30px;
+
+    color:#2ecc71;
+    transition-duration:0.4s;
+    
+  }
+  .form-submit:hover
+  {
+  background-color:rgba(46, 204, 113,1);
+  
+  
+  color:white ;
+  transform: scale(1.1) ;
+  }
+  .submission
+  { justify-content: center;
+    align-items: center;
+    display:flex;
+  }
+  .endlist1
+  {
+  float:left;
+    display:flex;
+    
+    
+  
+  }
+  .endlist2
+  {
+  float:right;
+    display:flex;
+    
+    
+  }
+  .endlist1 li,.endlist2 li{
+    transition-duration: 0.4s;
+    margin-right:5px;
+    
+  }
+  .endlist1 li a{
+    font-size:1.5rem;
+    color:rgb(68, 65, 65);
+    
+  }
+  .endlist2 li a{
+    color:rgb(68, 65, 65);
+  }
+  .endlist1 li:hover{
+    transform:scale(1.1);
+
+  }
+  .endlist2 li:hover{
+    transform:scale(1.3);
+  }
+  footer h2{
+   text-align:center;
+   margin-top:100px;
+    font-size:1.9rem;
+  }
+
+
+
+  footer  
+  {
+    background-color: black;
+    color:rgb(68, 65, 65);
+    font-size: 2rem;
+
+    padding: 5%;
+    width:auto;
+    
+    
+  }
