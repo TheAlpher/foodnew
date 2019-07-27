@@ -1,0 +1,346 @@
+@media only screen and (max-width: 416px) 
+{ 
+    div#bg-text
+    {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px; 
+        background-size:fill;
+        
+        height:750px;
+    }
+     .closebtn
+    {
+      display:block;
+    }
+    
+    .logo
+  {   margin-left:300px;
+      float:right;
+      padding-right:2vmax;
+      padding-top: 2vmax;
+      padding-bottom: 2vmax;
+    height:70px;
+    z-index:2;
+
+ 
+  
+  }
+  .init
+  {
+    
+      z-index:200;
+      
+  }
+
+  #spanicon
+  {
+    width:45px;
+    height: 55px;
+    display:block;
+     float:left;
+    margin-left:-350px;
+     margin-top:4vmax;
+     z-index:10;
+    background:transparent;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  #spanicon span 
+  {
+    display: block;
+
+    height: 9px;
+    margin-bottom:3px;
+   padding-bottom: 0px;
+    background: #2ecc71;
+    border-radius: 9px;
+     opacity: 1;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+   #mySidenav.initi
+   {   display:block;
+       margin-left:0;
+       height:700px;
+       z-index:2000;
+       margin-left:0; /* Stay on top */
+       top: 0; /* Stay at the top */
+       left: 0;
+       background-color: #ffffff; /* Black*/
+       overflow-x: hidden; /* Disable horizontal scroll */
+       padding-top: 60px; /* Place content 60px from the top */
+       transition: 0.5s;
+   }
+  
+      /* The navigation menu links */
+      .initi a 
+      {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #2ecc71;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .initi a:hover {
+        color: #09532e;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .initi, .closebtn 
+      {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      a.closebtn{
+          font-size: 3rem;
+        font-weight:4rem;
+      }
+     a.initial{
+         margin-right:0;
+         padding-right:32px;
+     }
+     a.initial:hover
+     {
+         background-color:rgb(156, 131, 131);
+     
+         border-bottom:0;
+     }
+      
+    
+      
+      /* #spanicon span:nth-child(1) {
+        top: 0px;
+      }
+      
+      #spanicon span:nth-child(2) {
+        top: 18px;
+      }
+      
+      #spanicon span:nth-child(3) {
+        top: 36px;
+      }
+      
+      #spanicon.open span:nth-child(1) {
+        top: 18px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+      }
+      
+      #spanicon.open span:nth-child(2) 
+      {
+        opacity: 0;
+        left: -60px;
+      }
+      
+      #spanicon.open span:nth-child(3) 
+      {
+        top: 18px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+      } */
+      
+      
+     
+       p.title
+        {
+         font-size:25px;
+         line-height:60px;
+         padding-top:100px;
+       }
+       div.scrolls{
+     
+         display:block;
+        align-content: center;
+        
+         margin-top:50px;  
+         margin-left:0;
+         
+       }
+       div.scrolls li{
+           
+           width:150px;
+           margin-left:130px;
+           margin-bottom:50px;
+         justify-content: center;
+       }
+      
+   
+       div.hungry{
+           justify-content:center;
+         padding-left:2vmax;
+         padding-right:2vmax;
+     
+        }
+        div.hungry a
+         {
+           font-size:1rem;
+        }
+   
+       
+     div.showmore
+     {
+     
+     padding-left:20px ; 
+    
+     }
+     div.showmore a
+     {
+         font-size:1rem;
+     }
+     h1.getfoodfast
+     {  
+         font-size:2.5vmax;
+         width:auto;
+        margin-left:0; 
+        padding-top:120px;
+         text-align:center;
+     }
+     .hr
+     {
+         width:20vmax;
+         margin-left:125px;
+         padding:0;
+         margin-bottom:50px;
+     }
+    p#intro1
+    {
+       
+       font-size:1rem;
+     height:auto;
+    }
+ div#process
+ {   
+     height:auto;
+ }  
+ div.howitworks
+ {
+     display:block;
+     padding-bottom:50px;
+ }
+ img.pic
+ {   
+     margin-left:120px;
+     margin-bottom:20px;
+     margin-top:50px;
+ }
+ div.howto
+ {
+   max-width:400px;  
+ }
+ div.parts
+ {   margin:0;
+   padding-top:15px;
+   padding-bottom:15px;
+   padding-left: 20px;
+   
+   max-width:350px;
+ }
+ h3.numbering{
+    min-width:60px; 
+    max-height:60px;
+ }
+ img.storelinks
+ {
+  margin-left:15px;
+ }
+div.citycontents
+{
+    margin-left:0;
+
+}
+img.citypics
+{
+height:120px;
+margin-left:7px;
+}
+div.citycont
+{
+  margin-left:13px;
+  margin-left:13px;  
+}
+div.customerrev
+{
+  display: block;
+  justify-content: center;  
+}
+div.eachcustomer
+{
+    margin:0;
+    width:250px;
+    margin-left:30px;
+}
+div.customerdetails
+{
+    margin-left:30px;
+}
+div#paymentplans
+{
+    padding-bottom: 20px;
+}
+div.plans
+{   margin:0;
+   
+    display:block;
+}
+div.eachplan
+{   margin:0;
+  padding-left: 40px;
+  padding-right:40px;
+  margin-left:17px;
+    margin-bottom:20px;
+}
+button.signup
+{
+margin:0;
+margin-left:100px;
+margin-top:40px;
+font-size:1rem;
+}
+div.entry
+{
+
+    margin-bottom:15px;
+}
+div.entry-text
+{
+    width:130px;
+}
+ul.endlist1{
+    display:block;
+    height:150px;
+}
+ul.endlist1 li{
+height:25px;
+}
+ul.endlist2 li{
+    margin-right:25px;
+}
+h2.footerend
+{
+    margin-top:150px;
+}
+}

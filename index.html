@@ -4,57 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/foodweb1.css" rel="stylesheet" type=text/css > 
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link href="css/fooddesktop.css" rel="stylesheet" type=text/css >
+<link href="css/foodphone.css" rel="stylesheet" type=text/css>
+<link href="css/foodtablet.css" rel="stylesheet" type=text/css >
+
+
     <title>HealthyFood</title>
 </head>
 <body>
-        <img class="logo" src="img/logo.png" height="100px" width="100px">
-        <div class="bg-image">
-        </div> 
+
+       
         <div id="bg-text">
+           <div class=init>
+                
+               <img class="logo" src="img/logo.png" >
          
-      <ul class="init">
-          <li class="init-opts" >
-             <a class=initial href="#contents">FOOD DELIVERY </a>
+          <div class=initi id='mySidenav'>
+
+             
+             <li>
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           </li>
-          
-          <li class="init-opts">
-             <a class=initial href="#process">HOW IT WORKS</a>
+               <li  >
+
+             <a class=initial href="#deliveryinfo" onclick="closeNav()">FOOD DELIVERY </a>
           </li>
-          
-          <li class="init-opts">
-             <a class=initial href="#cities">OUR CITIES</a>
+          <li >
+             <a class=initial href="#process" onclick="closeNav()">HOW IT WORKS</a>
           </li>
-          <li class="init-opts"> 
-              <a  class=initial href="#paymentplans">SIGN UP</a>
+          <li>
+             <a class=initial href="#cities" onclick="closeNav()">OUR CITIES</a>
+          </li>
+          <li> 
+              <a  class=initial href="#paymentplans" onclick="closeNav()">SIGN UP</a>
            </li>
-       </ul>
+         </div>
+         <div id='spanicon'>
+               <span onclick="openNav()"></span>
+               <span onclick="openNav()"></span>
+               <span onclick="openNav()"></span>
+            </div>
+         
+      </div> 
+        
+         <div class=titlefull>
         <p class="title"><br/> GOODBYE      JUNK      FOOD.<br/>
        HELLO      SUPER   HEALTHY    MEALS  </p>
       
-      <ul class="scrolls" >
-          <li class=list >
-             <a href="#contents"><button class="button hungry">I'm Hungry</button> </a>
+      <div class="scrolls" >
+          <li  >
+             <div class=" hungry"><a href="#deliveryinfo">I'm Hungry </a></div>
           </li>
           
-          <li class=list>
-             <a href="#contents"><button class="button showmore" >Show me more</button></a>
+          <li>
+            <div class="showmore" ><a href="#process">Show me more</a></div>
           </li>
            
-       </ul>
+         </div>
       </div>
-      
-       <h1 class="getfoodfast">GET FOOD FAST - NOT FAST FOOD  </h1>
+      </div>
+<div id=deliveryinfo>  
+       <h1 class="getfoodfast "><br/>GET FOOD FAST - NOT FAST FOOD  </h1>
    
-      <hr>
-      <div class="intro">
-         <p class="intro1">Hello, We're Omnifood your new premium delivery service. We know you are always busy.No time for cooking. SO let us take care of that, we are really good at it, we promise  </p>
-      </div>
-    
- <div id="contents">
-          <div id="article-section1">
+      <hr class='hr'>
+      
+         
+         <p id="intro1">Hello, We're Omnifood your new premium delivery service. We know you are always busy.No time for cooking. SO let us take care of that, we are really good at it, we promise  </p>
+     
+<div id=contents> 
+ <div id="contents1">
+          <div class="article-sections">
          
 
                <i class="far fa-3x fa-calendar-plus"></i>
@@ -67,34 +90,36 @@
             </p>
           </div>
              
-          <div id="article-section2">
+          <div class="article-sections">
              
              <i class="fas fa-3x fa-shipping-fast"></i>
              <br/>
-             <h2 class="sectitle">READY IN 20 MINUTES</h2>
+             <h2 class="sectitle" >READY IN 20 MINUTES</h2>
                
              
-             <p align="left" class="desc" ><br/>
+             <p class="desc" align="left"><br/>
             You're only 20 mins away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy;
             </p></div>
-       
-             <div id="article-section3">
+         </div>
+       <div id=contents2>
+             <div class="article-sections">
                   <i class="fas fa-3x fa-carrot"></i>
              <br/><h2 class="sectitle">100% ORGANIC</h2>
              <p align="left" class="desc" ><br/>All our evegtables are fresh, organic and local. Animals are raised without asdded hormones  or antibiotics. Good for your health, the environment and it also tastes better!</p>
           </div>
-          <div id="article-section4">
+          <div class="article-sections">
                <i class="fas fa-3x fa-boxes" color="green"></i>
                <br/>
          <h2 class="sectitle">ORDER ANYTHING</h2>
                <p align="left" class="desc" ><br/>We dont llimit your creativity which means uou can order whatever uou feel like. You can also choose from our menu conatining over 100 delicous meals.It's upto you!</p>
             </div>
- </div>
+        </div>
+      </div>   
+</div>    
  <div id="process">   
       <h1 class="getfoodfast">HOW IT WORKS - SIMPLE AS 1,2,3  </h1>
+      <hr class='hr'>
    
-      <hr>
-      <section>
 <div class="howitworks">
    
       <img class="pic" src="img/appphone.png" >
@@ -122,14 +147,14 @@
    </div>
 </div>
 </div> 
-</section>
+
 </div>     
 <div id="cities">
-<h1 class="getfoodfast">WE'RE CURRENTLY IN THESE CITIES  </h1>
+<h1 class="getfoodfast ">WE'RE CURRENTLY IN THESE CITIES  </h1>
    
-<hr> 
-<section>
-<div id="citycontents">
+<hr class='hr'> 
+<div class=citycontents>
+<div class="citycontents1">
    <div class="citycont">
       <img class="citypics" src="img/lisbon.jpg">
       <h3 class=citytitle>
@@ -160,6 +185,8 @@
                   <i class="fab fa-1x fa-twitter"></i><h4 class="citydesctweet" ><a href=# class="tweetlink">@ominfood_sf</a> </h4>
             </div>
       </div>
+   </div>
+      <div class="citycontents2">
       <div class="citycont">
             <img class="citypics"src="img/berlin.jpeg">
             <h3 class=citytitle>
@@ -190,13 +217,13 @@
                         <i class="fab fa-1x fa-twitter"></i><h4 class="citydesctweet" ><a href=# class="tweetlink">@ominfood_london</a> </h4>
                   </div>
             </div>         
+    </div>
 </div>
-</section>
 </div>
 <div id="customers">
-      <h1 class="getfoodfast">OUR CUSTOMERS CAN'T LIVE WITHOUT US  </h1>
+      <h1 class="getfoodfast ">OUR CUSTOMERS CAN'T LIVE WITHOUT US  </h1>
    
-      <hr> 
+      <hr class='hr'> 
       <div class="customerrev">
          <div class="eachcustomer">
                <i class="fas fa-quote-left"></i>
@@ -228,10 +255,10 @@
       </div>
 </div>
 <div id=paymentplans>
-<h1 class="getfoodfast">START EATING HEALTHY TODAY  </h1>
+<h1 class="getfoodfast ">START EATING HEALTHY TODAY  </h1>
    
-      <hr>
-      <section>
+      <hr class='hr'>
+     
 <div class="plans">
    
    
@@ -252,7 +279,7 @@
             <div class="payfeatures">
                         <i class="fas fa-1x fa-check-circle"></i><p class="payfeaturespoints">Free Delivery</p>
             </div>
-            <div class="signupnow"><button class="button showmore"> Sign up now</button></div>
+            <div class="signupnow"><button class=" signup"> Sign up now</button></div>
          </div>
          <div class="eachplan">
                <h3>PRO</h3>
@@ -270,7 +297,7 @@
                <div class="payfeatures">
                            <i class="fas fa-1x fa-check-circle"></i><p class="payfeaturespoints">Free Delivery</p>
                </div>
-               <div class="signupnow"><button class="button showmore"> Sign up now</button></div>
+               <div class="signupnow"><button class=" signup"> Sign up now</button></div>
             </div>
             <div class="eachplan">
                   <h3>STARTER</h3>
@@ -286,15 +313,15 @@
                   <div class="payfeatures">
                               <i class="fas fa-1x fa-check-circle"></i><p class="payfeaturespoints">Free Delivery</p>
                   </div>
-                  <div class="signupnow"><button class="button showmore"> Sign up now</button></div>
+                  <div class="signupnow"><button class="signup"> Sign up now</button></div>
                </div>
 
 </div>
-</section>
+
 </div>
 <div id=formentry>
-   <h1 class=getfoodfast>WE'RE HAPPY TO HEAR FROM YOU</h1>
-   <hr>
+   <h1 class="getfoodfast">WE'RE HAPPY TO HEAR FROM YOU</h1>
+   <hr class='hr'>
    <section class="Input"> 
       <form> 
      <div class="entry">
@@ -340,8 +367,8 @@
            <li ><a class=footerlist1 href=#>Android App</a></li>
         </ul>
         <ul class=endlist2>
-            <li><a  class=footerlist2 href=#> <a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li ><a class=footerlist2 href=#><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a  class=footerlist2 href=#><i class="fab fa-facebook-square"></i></a></li>
+            <li ><a class=footerlist2 href=#><i class="fab fa-twitter-square"></i></a></li>
             <li><a class=footerlist2 href=#><i class="fab fa-instagram"></i></a></li>
             <li><a class=footerlist2 href=#><i class="fab fa-snapchat-square"></i></a></li>
 
@@ -349,12 +376,18 @@
          </ul>
          <br/>
 
-         <h2>Copyright &copy 2019 Omnifood. All rights reserved   </h2>
+         <h2 class=footerend >Copyright &copy 2019 Omnifood. <br/>All rights reserved   </h2>
         
 
 
       </footer> 
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/demo.js"></script>
             
-</body>
+
+   </body>
 
 </html>
