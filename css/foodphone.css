@@ -13,12 +13,12 @@
       display:block;
     }
     
-    .logo
+    img.logo
   {   margin-left:70vw;
        position: absolute;
       padding-right:2vmax;
-      padding-top: 2vmax;
-      margin-bottom:200px;
+      padding-top:1vmax;
+      
     height:70px;
     
 
@@ -173,23 +173,24 @@
      
        p.title
         {
-         font-size:25px;
+         font-size:6vw;
+         margin-bottom:10vh;
          line-height:60px;
-         padding-top:100px;
+         padding-top:20vh;
        }
        div.scrolls{
      
          display:block;
-        align-content: center;
+        text-align: center;
         
          margin-top:50px;  
          margin-left:0;
          
        }
        div.scrolls li{
-           
+           display:inline-block;
            width:150px;
-           margin-left:130px;
+           margin-left:0;
            margin-bottom:50px;
          justify-content: center;
        }
@@ -330,14 +331,15 @@ div#paymentplans
 }
 div.plans
 {   margin:0;
-   
-    display:block;
+   text-align:center;
+   display:block;
 }
 div.eachplan
-{   margin:0;
-  padding-left: 40px;
-  padding-right:10px;
-  margin-left:13px;
+{   display:inline-block;
+    margin:0;
+  padding-left: 25px;
+  padding-right:25px;
+
     margin-bottom:20px;
 }
 button.signup
