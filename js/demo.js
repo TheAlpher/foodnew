@@ -55,7 +55,7 @@ window.addEventListener('scroll', function(event) {
    
     var elebottom=eletop +(2*$(element).height());
     console.log(elebottom);
-      if(eletop>( (navheight)/4+ wintop) && elebottom<(winbottom-(winheight/6)/*-(2*navheight)*/))
+      if(eletop>(  wintop) && elebottom<(winbottom/*-(2*navheight)*/))
      { element.style.opacity=1;
       $(element).removeClass(animation2); 
       $(element).addClass(animation1);
