@@ -11,9 +11,9 @@
 //     });  
 //   });
 
-var original=document.getElementById("intro1").textContent;
-var edited=original.replace('Omnifood','Alpher');
-document.getElementById("intro1").textContent=edited;
+// var original=document.getElementById("intro1").textContent;
+// var edited=original.replace('Omnifood','Alpher');
+// document.getElementById("intro1").textContent=edited;
 var element1 = document.querySelector('.init');
 var element2 = document.querySelectorAll('.initial'); // Identify target
 var firstelement=document.querySelector('#bg-text');
