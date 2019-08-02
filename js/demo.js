@@ -40,7 +40,7 @@ window.addEventListener('scroll', function(event) { // To listen for event
 
     }
 });
-function animate1(elementclass,animation1,animation2 )
+function animate1(elementclass,animation1 )
 {
 var element3 = document.querySelectorAll(elementclass);
 var element4 = document.querySelector('.init');
@@ -57,7 +57,7 @@ window.addEventListener('scroll', function(event) {
     console.log(elebottom);
       if(eletop>(wintop) && elebottom<(winbottom/*-(2*navheight)*/))
      { element.style.opacity=1;
-      $(element).removeClass(animation2); 
+      $(element).addClass(animation1); 
       
       
       //  console.log("yes");
@@ -68,7 +68,7 @@ window.addEventListener('scroll', function(event) {
    
       element.style.opacity=0;
        
-      $(element).addClass(animation2);
+      $(element).removeClass(animation1);
 
       //  console.log($(window).width());
       //   console.log("no");
@@ -109,9 +109,9 @@ window.addEventListener('scroll', function(event) {
 })
 });
 }
-animate1('.getfoodfast','animated fadeInUp','animated fadeOutUp');
-animate1('.parts','animated fadeInRight','animated fadeOutRight');
-animate1('.storelinks','animated fadeInUp','animated fadeOutDown');
+animate1('.getfoodfast','animated fadeInUp');
+animate1('.parts','animated fadeInRight');
+animate1('.storelinks','animated fadeInUp');
 
 
 /* Set the width of the side navigation to 0 */
