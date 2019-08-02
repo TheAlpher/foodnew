@@ -21,12 +21,13 @@ var subtitles=document.querySelector('.getfoodfast');
 window.addEventListener('scroll', function(event) { // To listen for event
     // event.preventDefault();
 
-    if (window.scrollY >= ($(firstelement).height()/7) )
+    if (window.scrollY >= ($(firstelement).height()))
     { // Just an example
+      console.log()
         element1.style.backgroundColor = 'white';
         element2.forEach(element => {
-        // element.style.color='#000000'; 
-        element.addClass('animated fadeInUp');
+       element.style.color='#000000'; 
+        // element.addClass('animated fadeInUp');
         });
         // or default color
     } else {
@@ -49,7 +50,7 @@ window.addEventListener('scroll', function(event) {
     var elebottom=eletop +(2*$(element).height());
     console.log(elebottom);
       if(eletop>wintop && elebottom<=winbottom)
-     { element.addClass("fadeInUp");
+     { $(element).addClass("animated fadeInUp");
     }
     // else
     // {
@@ -68,5 +69,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("spanicon").style.display='none';
 }
-
+// $(document).ready(function()
+// {
+//   closeNav();
+// })
 /* Set the width of the side navigation to 0 */

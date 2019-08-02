@@ -15,12 +15,12 @@
     
     .logo
   {   margin-left:300px;
-      float:right;
+       position: absolute;
       padding-right:2vmax;
       padding-top: 2vmax;
-      padding-bottom: 2vmax;
+      margin-bottom:200px;
     height:70px;
-    z-index:2;
+    
 
  
   
@@ -38,7 +38,8 @@
     height: 55px;
     display:block;
      float:left;
-    margin-left:-350px;
+     margin-left:5vmax;
+   
      margin-top:4vmax;
      z-index:10;
     background:transparent;
@@ -72,11 +73,16 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
   }
-   #mySidenav.initi
+  #mySidenav
+  {
+    width:0;
+  } 
+  #mySidenav.initi
    {   display:block;
        margin-left:0;
        height:700px;
        z-index:2000;
+       
        margin-left:0; /* Stay on top */
        top: 0; /* Stay at the top */
        left: 0;
