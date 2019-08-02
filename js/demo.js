@@ -50,15 +50,15 @@ window.addEventListener('scroll', function(event) {
    
     var elebottom=eletop +(2*$(element).height());
     console.log(elebottom);
-      if(eletop>( navheight+ wintop) && elebottom<=(winbottom/*-(2*navheight)*/))
-     { $(element).style.display="block";
+      if(eletop>( (navheight)/2+ wintop) && elebottom<(winbottom/*-(2*navheight)*/))
+     { element.style.opacity=1;
        $(element).addClass("animated fadeInUp");
        console.log("yes");
     }
      else
-    {  
+    {  element.style.opacity=0;
        $(element).removeClass("animated fadeInUp"); 
-        $(element).style.display="hidden";
+      
         console.log("no");
       }
 
