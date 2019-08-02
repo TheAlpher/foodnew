@@ -14,6 +14,8 @@
 // var original=document.getElementById("intro1").textContent;
 // var edited=original.replace('Omnifood','Alpher');
 // document.getElementById("intro1").textContent=edited;
+var wintop     = $(window).scrollTop();
+var winbottom= wintop+$(window).height();
 var element1 = document.querySelector('.init');
 var element2 = document.querySelectorAll('.initial'); // Identify target
 var firstelement=document.querySelector('#bg-text');
@@ -38,32 +40,78 @@ window.addEventListener('scroll', function(event) { // To listen for event
 
     }
 });
-var element3 = document.querySelectorAll('.getfoodfast');
+function animate1(elementclass,animation1,animation2 )
+{
+var element3 = document.querySelectorAll(elementclass);
 var element4 = document.querySelector('.init');
 window.addEventListener('scroll', function(event) {
   element3.forEach(element => {
     var wintop     = $(window).scrollTop();
-    var winbottom= wintop+$(window).height();
+    var winheight=$(window).height();
+    var winbottom= wintop+winheight;
     console.log(winbottom);
     const navheight=$(element4).height();
     var eletop = $(element).offset().top;
    
     var elebottom=eletop +(2*$(element).height());
     console.log(elebottom);
-      if(eletop>( (navheight)/2+ wintop) && elebottom<(winbottom/*-(2*navheight)*/))
+      if(eletop>( (navheight)/4+ wintop) && elebottom<(winbottom-(winheight/6)/*-(2*navheight)*/))
      { element.style.opacity=1;
-       $(element).addClass("animated fadeInUp");
-       console.log("yes");
+      $(element).removeClass(animation2); 
+      $(element).addClass(animation1);
+      
+      //  console.log("yes");
     }
      else
-    {  element.style.opacity=0;
-       $(element).removeClass("animated fadeInUp"); 
-      
-        console.log("no");
+     
+    {  
+      $(element).removeClass(animation1);
+      element.style.opacity=0;
+       
+      $(element).addClass(animation2);
+
+      //  console.log($(window).width());
+      //   console.log("no");
       }
 
 })
 });
+}
+function animatewithoutopacity(elementclass,animation1,animation2 )
+{
+var element3 = document.querySelectorAll(elementclass);
+var element4 = document.querySelector('.init');
+window.addEventListener('scroll', function(event) {
+  element3.forEach(element => {
+    var wintop     = $(window).scrollTop();
+    var winheight=$(window).height();
+    var winbottom= wintop+winheight;
+    console.log(winbottom);
+    const navheight=$(element4).height();
+    var eletop = $(element).offset().top;
+   
+    var elebottom=eletop +($(element).height());
+    console.log(elebottom);
+      if(eletop>( /*(navheight)/4+*/ wintop) && elebottom<(winbottom/*-(2*navheight)*/))
+     { 
+      $(element).removeClass(animation2); 
+      $(element).addClass(animation1);
+      
+      
+    }
+     else
+    {  
+      $(element).removeClass(animation1); 
+      $(element).addClass(animation2);
+
+      }
+
+})
+});
+}
+animate1('.getfoodfast','animated fadeInUp','animated fadeOutUp');
+animate1('.parts','animated fadeInRight','animated fadeOutRight');
+animate1('.storelinks','animated fadeInUp','animated fadeOutDown');
 
 
 /* Set the width of the side navigation to 0 */

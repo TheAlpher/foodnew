@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
   margin:0;
   font-family:"Lato";
-  
+  overflow-x: hidden;
   }
   *
   {
@@ -297,6 +297,13 @@ html{
      margin:50px;
   height:70px;
     }
+    .parts1{
+      display:flex;
+      width:550px;
+       margin:50px;
+    height:70px;
+      }
+
   .numbering
   { text-align:center;
     border-style:solid;
