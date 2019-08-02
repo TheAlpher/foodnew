@@ -228,8 +228,8 @@
      }
      .hr
      {
-         width:20vmax;
-         margin-left:125px;
+         max-width:30%;
+         margin-left:35%;
          padding:0;
          margin-bottom:50px;
      }
@@ -317,13 +317,14 @@ h4.citydesctweet{
 div.customerrev
 {
   display: block;
-  justify-content: center;  
+  text-align: center;
 }
 div.eachcustomer
-{
+{ display: inline-block;
     margin:0;
     width:250px;
-    margin-left:30px;
+    margin-bottom:7vh;
+  
 }
 div.customerdetails
 {
