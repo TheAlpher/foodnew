@@ -52,10 +52,10 @@ window.addEventListener('scroll', function(event) {
       if(eletop>wintop && elebottom<=winbottom)
      { $(element).addClass("animated fadeInUp");
     }
-    // else
-    // {
-    //     element.removeClass("animated fadeInUp"); 
-    // }
+     else
+    {
+       $(element).removeClass("animated fadeInUp"); 
+     }
 
 })
 });
