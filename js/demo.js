@@ -39,23 +39,28 @@ window.addEventListener('scroll', function(event) { // To listen for event
     }
 });
 var element3 = document.querySelectorAll('.getfoodfast');
+var element4 = document.querySelector('.init');
 window.addEventListener('scroll', function(event) {
   element3.forEach(element => {
     var wintop     = $(window).scrollTop();
     var winbottom= wintop+$(window).height();
     console.log(winbottom);
-
+    const navheight=$(element4).height();
     var eletop = $(element).offset().top;
    
     var elebottom=eletop +(2*$(element).height());
     console.log(elebottom);
-      if(eletop>wintop && elebottom<=winbottom)
-     { $(element).addClass("animated fadeInUp");
+      if(eletop>( navheight+ wintop) && elebottom<=(winbottom/*-(2*navheight)*/))
+     { $(element).style.display="block";
+       $(element).addClass("animated fadeInUp");
+       console.log("yes");
     }
      else
-    {
+    {  
        $(element).removeClass("animated fadeInUp"); 
-     }
+        $(element).style.display="hidden";
+        console.log("no");
+      }
 
 })
 });
