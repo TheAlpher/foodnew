@@ -52,10 +52,10 @@ window.addEventListener('scroll', function(event) {
     console.log(winbottom);
     const navheight=$(element4).height();
     var eletop = $(element).offset().top;
-   
-    var elebottom=eletop +(2*$(element).height());
+    var eleheight=$(element).height();
+    var elebottom=eletop + eleheight;
     console.log(elebottom);
-      if(eletop>(wintop) && elebottom<(winbottom/*-(2*navheight)*/))
+      if(eletop>(wintop-eleheight) && elebottom<(winbottom+eleheight))
      { element.style.opacity=1;
       $(element).addClass(animation1); 
       
@@ -89,8 +89,8 @@ window.addEventListener('scroll', function(event) {
     console.log(winbottom);
     const navheight=$(element4).height();
     var eletop = $(element).offset().top;
-   
-    var elebottom=eletop +($(element).height());
+    var eleheight=$(element).height();
+    var elebottom=eletop +eleheight;
     console.log(elebottom);
       if(eletop>( /*(navheight)/4+*/ wintop) && elebottom<(winbottom/*-(2*navheight)*/))
      { 
@@ -112,8 +112,11 @@ window.addEventListener('scroll', function(event) {
 animate1('.getfoodfast','animated fadeInUp');
 animate1('.parts','animated fadeInRight');
 animate1('.storelinks','animated fadeInUp');
-
-
+animate1('.eachcustomer','animated fadeInLeft');
+animate1('.eachplan','animated fadeInUp');
+animate1('.pic','animated fadeInLeft')
+if($(window).width()<=416)
+{
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -121,6 +124,7 @@ function closeNav() {
 }function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("spanicon").style.display='none';
+}
 }
 // $(document).ready(function()
 // {

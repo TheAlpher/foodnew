@@ -3,7 +3,7 @@ html{
   margin:0;
   font-family:"Lato";
   overflow-x: hidden;
-  }
+   box-sizing: border-box;}
   *
   {
     margin:0;
@@ -160,6 +160,7 @@ html{
     margin-right: 2.3vw; 
     color:white ;
     transform: scale(1.1) ;
+    transform:rotateY(180deg);
   }
     
   .showmore
@@ -334,7 +335,7 @@ html{
   }
   .citycontents,.citycontents1, .citycontents2
   {
-      display:flex;  
+       display:flex;   
   }
   .citycontents2
   {
@@ -345,10 +346,66 @@ html{
     margin:2%;
     height: auto;
   }
-  .citypics{
-  width:350px;
-  height:180px;
-  border-radius: 20px;
+  .flipcontainer {
+    perspective: 2000px;
+  }
+    /* flip the pane when hovered */
+    .flipcontainer:hover .flipper {
+      transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+  
+ .front, .back {
+    min-width: 350px;
+    height: 180px;
+    border-radius: 30px;
+   
+  }
+  .flipcontainer{
+    
+    min-width: 350px;
+    min-height: 180px;
+  }
+  
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+  
+    position: relative;
+  }
+  
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+   
+    position: absolute;
+  
+  }
+  
+  /* front pane, placed above back */
+  .front {
+    z-index: 5;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  /* back, initially hidden pane */
+  .back {
+    z-index:0;
+   
+    border:pink 2px solid;
+    background-color:green;
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+  .back h4{
+    text-align:center;
+    padding:25%;
   }
   
   .citytitle
@@ -454,7 +511,7 @@ html{
       margin-left:50px;
       margin-right:50px;
   }
-  .eachplan
+  .eachplan 
   {
       margin:50px;
       width:300px;

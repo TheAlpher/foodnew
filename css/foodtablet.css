@@ -153,13 +153,19 @@
   {
     margin-bottom:10vmax;
   }
- .citypics{
-  width:40vw;
-  height:180px;
-  border-radius: 20px;
+  .front, .back {
+    max-width: 35vw;
+    height: 180px;
+    border-radius: 30px;
+   
+  }
+  .flipcontainer{
+    
+    max-width: 40vw;
+    min-height: 180px;
   }
  .citycontents
- { margin-left:6vmax;
+ { margin-left:0;
    display:block;
    width:auto;
  }
