@@ -306,15 +306,15 @@ div.citycontents1
 img.front {
   min-width:40vw;
   max-width:40vw;
-  height: 120px;
+  max-height: 100px;
 
  
 }
- div.back
+img.back
  {
   min-width:40vw;
   max-width:40vw;
-  height: 120px;
+  max-height: 100px;
 
  
 }
@@ -322,8 +322,8 @@ div.flipcontainer
 { min-width:40vw;
   max-width:40vw;
   
-  min-height:120px; 
-  max-height: 120px;
+  min-height:100px; 
+  max-height: 100px;
 }
 div.citycont
 {

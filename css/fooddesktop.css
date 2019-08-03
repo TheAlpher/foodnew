@@ -403,10 +403,7 @@ html{
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
   }
-  .back h4{
-    text-align:center;
-    padding:25%;
-  }
+
   
   .citytitle
   {
@@ -582,7 +579,10 @@ padding-left:10px;
   background-color:#2ecc71;
   color:white;
   }
- 
+ #formentry h1
+ {
+   font-size:2rem;
+ }
   .entry
   {
     

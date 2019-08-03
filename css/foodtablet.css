@@ -153,7 +153,7 @@
   {
     margin-bottom:10vmax;
   }
-  .front, .back {
+  img.front, img.back {
     max-width: 35vw;
     height: 180px;
     border-radius: 30px;
