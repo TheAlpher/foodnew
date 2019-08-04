@@ -29,6 +29,7 @@ window.addEventListener('scroll', function(event) { // To listen for event
         element1.style.backgroundColor = 'white';
         element2.forEach(element => {
        element.style.color='#000000'; 
+       console.log('a');
         // element.addClass('animated fadeInUp');
         });
         // or default color
